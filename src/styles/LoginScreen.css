@@ -1,0 +1,47 @@
+/* 🔥 Página completa */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* 🔥 Separa el login y el footer */
+  height: 100vh;
+
+}
+
+/* 🔥 Contenedor del login (centrado en la pantalla) */
+.login-container {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  width: 350px;
+  margin-top: auto; /* 🔥 Mantiene el login centrado */
+  margin-bottom: auto;
+}
+
+/* 🔥 Footer ahora queda pegado abajo sin afectar el login */
+.footer-container {
+  margin-bottom: 20px; /* 🔹 Ajusta la distancia del borde inferior */
+  text-align: center;
+}
+
+/* 🔥 Logo del footer */
+.footer-logo {
+  width: 120px;
+  opacity: 0.8;
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+/* 🔥 Texto Powered by */
+.powered-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-weight: 400;
+}
+
+.powered-text span {
+  font-weight: bold;
+  color: white;
+}

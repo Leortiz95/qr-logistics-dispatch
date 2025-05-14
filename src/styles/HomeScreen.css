@@ -1,0 +1,43 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: #004C97;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.scan-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: #004C97;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 1rem;
+}
+
+.scan-button:hover {
+  background: #007AC3;
+}
+
+.logout-text {
+  margin-top: 20px;
+  color: #004C97;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logout-text:hover {
+  color: #007AC3;
+}

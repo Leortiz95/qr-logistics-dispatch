@@ -1,0 +1,63 @@
+.reception-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .checkbox-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  .mensaje-ok {
+    color: green;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .motivo-box {
+    margin-top: 20px;
+  }
+  
+  .motivo-box select {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .textarea-box {
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

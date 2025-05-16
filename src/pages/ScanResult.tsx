@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { fakePallets } from "../data/mocks";
 import "../styles/ScanResult.css";
 
-// 🔥 Función para truncar textos
+// Función para truncar textos
 const truncateText = (text: string, length: number = 8) => {
   return text.length > length ? text.substring(0, length) + "..." : text;
 };
@@ -28,14 +28,14 @@ const ScanResult = () => {
           bolsasPallet: 90,
           grado: "C6",
           placaSugerida: "10.0 x 5.5",
-          lote: truncateText(`ZE10${scannedCode}`, 6),  // 🔥 Truncamos a 6 caracteres
-          material: truncateText(`30114${scannedCode}`, 6),  // 🔥 Truncamos a 6 caracteres
-          palletN: truncateText(scannedCode, 6),  // 🔥 Truncamos a 6 caracteres
+          lote: truncateText(`ZE10${scannedCode}`, 6),  //  Truncamos a 6 caracteres
+          material: truncateText(`30114${scannedCode}`, 6),  //  Truncamos a 6 caracteres
+          palletN: truncateText(scannedCode, 6),  //  Truncamos a 6 caracteres
         };
       }
       setScannedPallets((prev) => [...prev, palletData]);
     }
-  }, [scannedCode]); // 🔥 Solo se ejecuta cuando hay un nuevo código escaneado
+  }, [scannedCode]); //  Solo se ejecuta cuando hay un nuevo código escaneado
 
   return (
     <div className="scan-result-container">
@@ -62,7 +62,7 @@ const ScanResult = () => {
       <div className="button-container">
         <button 
           className="scan-button" 
-          onClick={() => navigate("/scan")} // 🔥 Vuelve a la pantalla SOLO del escáner
+          onClick={() => navigate("/scan")} //  Vuelve a la pantalla SOLO del escáner
         >
           Volver a escanear
         </button>

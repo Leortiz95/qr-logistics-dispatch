@@ -10,7 +10,7 @@ import ScanAndReviewScreen from "./pages/ScanAndReviewScreen";
 import "./styles/App.css";
 import { JSX } from "react";
 
-// 🔐 Protege rutas según autenticación
+// Protege rutas según autenticación
 const PrivateRoute = ({ element }: { element: JSX.Element }) => {
   const isAuthenticated = localStorage.getItem("isAuthenticated") === "true";
   return isAuthenticated ? element : <Navigate to="/login" replace />;

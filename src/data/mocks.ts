@@ -10,7 +10,7 @@ export const fakePallets = [
     placaSugerida: "09.5 x 4.5",
     lote: "ZE1010059",
     material: "30114415",
-    palletN: "1", // 🔹 ID ahora es string para evitar problemas
+    palletN: "1", //  ID ahora es string para evitar problemas
   },
   {
     produccion: "Argentina 2025",
@@ -23,7 +23,7 @@ export const fakePallets = [
     placaSugerida: "10.0 x 5.0",
     lote: "ZE1010060",
     material: "30114416",
-    palletN: "2", // 🔹 Asegurar compatibilidad con QR
+    palletN: "2", // Asegurar compatibilidad con QR
   }
 ];
 
@@ -62,7 +62,7 @@ export const fakeViajes = [
   },
 ];
 
-// 🔥 Listas separadas para cada dropdown
+//  Listas separadas para cada dropdown
 export const conductores = fakeViajes.map((v) => v.conductor);
 export const camiones = fakeViajes.map((v) => v.patenteCamion);
 export const acoplados = fakeViajes.map((v) => v.patenteAcoplado);

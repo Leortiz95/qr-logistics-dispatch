@@ -13,7 +13,7 @@ const QRScanner = ({ onScan }: QRScannerProps) => {
   const handleScan = (result: string | null) => {
     if (!result || isProcessing) return;
 
-    setIsProcessing(true); // 🔴 Evita múltiples escaneos rápidos
+    setIsProcessing(true); // Evita múltiples escaneos rápidos
     onScan(result.toString().trim());
 
     setTimeout(() => {

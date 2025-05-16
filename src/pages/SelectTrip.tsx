@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { conductores, camiones, acoplados, destinos } from "../data/mocks";
-import "../styles/SelectTrip.css"; // 🔥 Importamos estilos mejorados
+import "../styles/SelectTrip.css"; 
 
 const SelectTrip = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const scannedPallets = location.state?.scannedPallets || [];
 
-  // 🔥 Estados separados para cada dropdown
+  //  Estados separados para cada dropdown
   const [selectedConductor, setSelectedConductor] = useState("");
   const [selectedCamion, setSelectedCamion] = useState("");
   const [selectedAcoplado, setSelectedAcoplado] = useState("");
@@ -20,7 +20,6 @@ const SelectTrip = () => {
       return;
     }
 
-    // 🔥 Pasamos la información a la pantalla de confirmación
     navigate("/confirmation", {
       state: {
         scannedPallets,

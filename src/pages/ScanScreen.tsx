@@ -6,13 +6,13 @@ const ScanScreen = () => {
   const navigate = useNavigate();
 
   const handleScan = (result: string) => {
-    navigate("/scan-result", { state: { scannedCode: result } }); // 🔥 Envía el código escaneado a la otra pantalla
+    navigate("/scan-result", { state: { scannedCode: result } }); // vía el código escaneado a la otra pantalla
   };
 
   return (
     <div className="container">
       <h1>Escanear Código QR</h1>
-      <QRScanner onScan={handleScan} /> {/* 🔥 SOLO el escáner */}
+      <QRScanner onScan={handleScan} /> {/*  SOLO el escáner */}
     </div>
   );
 };
